@@ -1,33 +1,34 @@
 
 public class Bmi {
-	private int wzrost;
+	private double wzrost;
 	private int waga;
 
-	void setWzrost(int wzrost) {
+	public void setWzrost(double wzrost) {
 		this.wzrost = wzrost;
 	}
 
-	int getWzrost() {
+	public double getWzrost() {
 		return wzrost;
 	}
 
-	void setWaga(int waga) {
+	public void setWaga(int waga) {
 		this.waga = waga;
 	}
 
-	int getWaga() {
+	public int getWaga() {
 		return waga;
 	}
 	
-	Bmi(int waga, int wzrost){
+	public Bmi(int waga, double wzrost){
 		this.waga = waga;
 		this.wzrost = wzrost;
 	}
 	
-	void zmierzBmi(){
-		
-		double bmi = waga / (wzrost * wzrost);
-		System.out.println(bmi);
+	public void zmierzBmi(){
+		System.out.println(waga);
+		System.out.println(wzrost);
+		double bmia = waga / (wzrost * wzrost);
+		System.out.println(bmia);
 		
 	}
 }
